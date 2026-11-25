@@ -34,6 +34,18 @@ jobs:
           NEXT_PUBLIC_BASE_PATH: ${{ steps.pages.outputs.base_path }}
           NEXT_PUBLIC_SITE_URL: ${{ steps.pages.outputs.base_url }}
       - run: npm run typecheck
+      - name: Verify that exported assets use the Pages base path
+        env:
+          PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
+        run: |
+          node --input-type=module <<'NODE'
+          import { readFile } from 'node:fs/promises';
+          const page = await readFile('out/index.html', 'utf8');
+          const base = process.env.PAGES_BASE_PATH;
+          for (const folder of ['/images/', '/_next/static/']) {
+            if (!page.includes(base + folder)) throw new Error('Missing asset path ' + base + folder);
+          }
+          NODE
       - uses: actions/upload-pages-artifact@v4
         with:
           path: out
