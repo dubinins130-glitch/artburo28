@@ -1,0 +1,19 @@
+:root {
+  --paper: #f8f7f5;
+  --ink: #252722;
+  --muted: #595952;
+  --line: #d9d6cf;
+  --stone: #eceae4;
+  --sage: #e3e7dd;
+  --sage-strong: #bfcaac;
+  --dark: #242620;
+  --dark-muted: #c9c8be;
+  --light: #fcfbf7;
+  --page-gutter: clamp(26px, 6vw, 118px);
+  --header-height: 74px;
+  --section-space: clamp(82px, 10vw, 164px);
+  /* Единая система движения: микроинтеракции 250–400 мс, раскрытие линий около 900 мс. */
+  --motion-hover: .3s;
+  --motion-line: .85s;
+  --motion-ease: cubic-bezier(.22, 1, .36, 1);
+}
