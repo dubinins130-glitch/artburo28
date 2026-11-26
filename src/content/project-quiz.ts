@@ -20,8 +20,8 @@ export const quizQuestions = [
     label: "Площадь",
     options: [
       { label: "До 50 м²" },
-      { label: "50–100 м²" },
-      { label: "100–150 м²" },
+      { label: "От 50 до 100 м²" },
+      { label: "От 100 до 150 м²" },
       { label: "Более 150 м²" },
     ],
   },

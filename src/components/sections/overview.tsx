@@ -11,7 +11,7 @@ export function About() {
         <h2 className="section-title about-title" id="about-title">Хороший ремонт<br className="desktop-break" /> начинается с плана.</h2>
         <div className="about-copy">
           <p data-reveal-text>Разбираемся, как вы пользуетесь квартирой, и заранее продумываем планировку, материалы и порядок работ.</p>
-          <p data-reveal-text>Согласовываем смету до начала ремонта. По ходу работ проверяем скрытые работы, отделку и детали, которые будут на виду каждый день.</p>
+          <p data-reveal-text>Согласовываем смету до начала ремонта. Проверяем скрытые работы и качество отделки.</p>
         </div>
       </div>
     </section>
@@ -23,7 +23,7 @@ export function Projects() {
     <section className="projects section-shell" id="projects" tabIndex={-1} aria-labelledby="projects-title">
       <div className="section-intro" data-reveal>
         <h2 className="section-title" id="projects-title">Проекты</h2>
-        <p data-reveal-text>Демонстрационное портфолио. Стоковые фотографии показывают варианты планировки и отделки.</p>
+        <p data-reveal-text>Примеры планировок и отделки на стоковых фотографиях.</p>
       </div>
       <ProjectGallery />
     </section>
@@ -36,7 +36,7 @@ export function Services() {
       <div className="section-shell">
         <div className="section-intro" data-reveal>
           <h2 className="section-title" id="services-title">Услуги и стоимость</h2>
-          <p data-reveal-text>Три направления работы. Цены на сайте не публикуются: стоимость считают индивидуально после консультации и замера.</p>
+          <p data-reveal-text>Стоимость рассчитываем после консультации и замера.</p>
         </div>
         <div className="service-grid">
           {services.map((service) => (

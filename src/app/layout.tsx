@@ -5,7 +5,7 @@ import "@fontsource-variable/manrope/wght.css";
 import "./globals.css";
 import "./project-quiz.css";
 
-const title = `${company.name} — дизайн интерьеров и ремонт ${company.location}`;
+const title = `${company.name}. Дизайн интерьеров и ремонт ${company.location}`;
 
 const socialImage = new URL(hero.image, company.siteUrl).href;
 

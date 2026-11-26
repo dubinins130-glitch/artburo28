@@ -25,7 +25,7 @@ export function Contacts() {
         <div className="contacts-copy" data-reveal>
           <p className="section-label">Контакты</p>
           <h2 className="section-title" id="contacts-title">Давайте обсудим ваш ремонт.</h2>
-          <p data-reveal-text>Расскажите, в каком состоянии квартира и что вы хотите изменить. С этого начинается разговор о смете и сроках.</p>
+          <p data-reveal-text>Расскажите, что хотите изменить в помещении и в каком оно состоянии.</p>
           <p className="contacts-city">{company.address ? `${company.city}, ${company.address}` : company.city}</p>
           <ContactLinks />
           <QuizTrigger className="button button--light contacts-quiz-trigger" />
